@@ -1,0 +1,82 @@
+body{
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+img{
+    width: 150px;
+    height: auto;
+}
+#libri{
+    height: 100%;
+    width: 70%;
+}
+table{
+    height: 100%;
+    width: 80%;
+    text-align: center;
+}
+th{
+ cursor: pointer;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#inputAzioni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+#inputAzioni > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#azioni{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+fieldset{
+    width: 100%;
+    margin-top: 100px;
+    height: calc(100% - 100px);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#azioniLibri{
+    height: 100%;
+    width: 100%;
+    margin-right: 50px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

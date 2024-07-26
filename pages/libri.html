@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/libri.css" />
+    <script src="../index.js"></script>
+    <title>Biblioteca Zichi | Libri</title>
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo.svg" alt="" />
+      <h1>Biblioteca Zichi</h1>
+    </header>
+    <main>
+      <div id="libri">
+        <table>
+          <thead>
+            <tr>
+              <th onclick="ordinaLibri('titolo')">Titolo</th>
+              <th onclick="ordinaLibri('genere')">Genere</th>
+              <th onclick="ordinaLibri('anno')">Anno</th>
+            </tr>
+          </thead>
+          <tbody id="tableLibri"></tbody>
+        </table>
+      </div>
+      <div id="azioni">
+        <div id="inputAzioni">
+          <div>
+            <label for="inserimento">Inserimento di un nuovo libro</label>
+            <input
+              checked="true"
+              type="radio"
+              name="inputAzioni"
+              id="inserimento"
+              onchange="cambioAzione('inserisci')"
+            />
+          </div>
+          <div>
+            <label for="prestito">Presa in prestito di un libro</label>
+            <input
+              type="radio"
+              name="inputAzioni"
+              id="prestito"
+              onchange="cambioAzione('prestito')"
+            />
+          </div>
+        </div>
+        <div id="azioniLibri">
+          <fieldset>
+            <label for="titolo"
+              >Titolo* <input type="text" id="titolo" />
+            </label>
+            <label for="genere"
+              >Genere* <input type="text" id="genere" />
+            </label>
+            <label for="anno">Anno* <input type="date" id="anno" /></label>
+            <button onclick="inserisciLibro()">Inserisci</button>
+          </fieldset>
+        </div>
+      </div>
+    </main>
+    <footer>Creato da Zichi Baravalle</footer>
+  </body>
+</html>
